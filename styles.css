@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #EFE6DA; /* Color tomado del fondo del logo */
+    color: #333333; /* Texto oscuro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+canvas {
+    display: block;
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+    object-fit: contain; /* Ajuste para que la imagen se vea completa sin recortarse */
+    max-width: 100%;
+    max-height: 100%;
+    border: none; /* Eliminamos bordes para que no afecten la imagen */
+}
+
+/* Botones laterales */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d39416; /* Color tomado del logo */
+    color: #000000; /* Texto en blanco para mejor contraste */
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Suaviza los bordes */
+}
+
+.nav-btn:hover {
+    background-color: #ff9100; /* Un tono más oscuro para el efecto hover */
+}
+
+.nav-btn:first-of-type {
+    left: 10px;
+}
+
+.nav-btn:last-of-type {
+    right: 10px;
+}
+.logo img {
+    width: 120px; /* Tamaño más pequeño */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centrar el logo */
+}
+/* Icono de menú lateral */
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Menú lateral oculto */
+/* Menú lateral oculto por defecto */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100vh;
+   background-color: #25863ae0;/* Fondo con color del logo */
+    color: #000000;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+}
+
+/* Mostrar menú lateral cuando se activa */
+.menu-lateral.active {
+    left: 0;
+    border-right: none; /* Eliminamos cualquier borde visible */
+}
+
+/* Estilo mejorado para la lista */
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.menu-lateral li {
+    padding: 8px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd; /* Línea sutil entre elementos */
+}
+
+/* Eliminamos el borde del último elemento */
+.menu-lateral li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tríptico EcoFilament</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./logo.jpg">
+
+</head>
+
+<body>
+    <main>
+        <div class="contenedor">
+            <button class="nav-btn" onclick="cambiarSeccion(-1)">⬅</button>
+            <canvas id="canvas"></canvas>
+            <button class="nav-btn" onclick="cambiarSeccion(1)">➡</button>
+        </div>
+    </main>
+
+    <!-- Ícono de menú lateral -->
+    <img src="menu-lateral.png" alt="Menú" class="menu-icon" onclick="mostrarMenu()">
+
+    <!-- Menú lateral -->
+    <div id="menu-lateral" class="menu-lateral">
+        <DIV class="logo">
+<img src="./logo.jpg" alt="">
+        </DIV>
+        <p>ESTUDIANTES</p>
+        <ul>
+            <li>JOSÉ LUIS AGUILAR PÉREZ</li>
+            <li>JUAN CARLOS FLORES VENTURA</li>
+            <li>MARÍA DEL CARMEN JIMÉNEZ SANTIZ</li>
+            <li>JOSÉ DANIEL LOPEZ GONZÁLEZ</li>
+        </ul>
+        <p>ASESORES</p>
+        <ul>
+            <li>ING.JONATHAN WILIAM AGUILAR SANCHEZ</li>
+            <li>ING.MARCO ANTONIO LÓPEZ PINTO</li>
+
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
