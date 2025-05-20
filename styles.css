@@ -28,7 +28,7 @@ canvas {
 /* Botones laterales */
 .nav-btn {
     position: absolute;
-    top: 50%;
+   bottom: 15px; /* Mueve los botones más abajo */
     transform: translateY(-50%);
     background-color: #d39416; /* Color tomado del logo */
     color: #000000; /* Texto en blanco para mejor contraste */
